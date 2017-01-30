@@ -1,68 +1,7 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "generator-oas",
-        "scope": null,
-        "escapedName": "generator-oas",
-        "name": "generator-oas",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/fabianLeon/Documentos/proyectos oas/proti"
-    ],
-    [
-      {
-        "raw": "generator-oas",
-        "scope": null,
-        "escapedName": "generator-oas",
-        "name": "generator-oas",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/fabianLeon"
-    ],
-    [
-      {
-        "raw": "generator-oas",
-        "scope": null,
-        "escapedName": "generator-oas",
-        "name": "generator-oas",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/fabianLeon/go/src/github.com/fabianLeon/testApi"
-    ],
-    [
-      {
-        "raw": "generator-oas",
-        "scope": null,
-        "escapedName": "generator-oas",
-        "name": "generator-oas",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/fabianLeon/Documentos/oas/oas"
-    ],
-    [
-      {
-        "raw": "generator-oas",
-        "scope": null,
-        "escapedName": "generator-oas",
-        "name": "generator-oas",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/fabianLeon/Documentos/oas"
-    ]
-  ],
+
   "_from": "generator-oas",
-  "_id": "generator-oas@0.0.11",
+  "_id": "generator-oas@0.0.12",
   "_inCache": true,
   "_location": "/generator-oas",
   "_nodeVersion": "7.2.0",
@@ -175,5 +114,5 @@
   "scripts": {
     "test": "echo mocha"
   },
-  "version": "0.0.11"
+  "version": "0.0.12"
 }
