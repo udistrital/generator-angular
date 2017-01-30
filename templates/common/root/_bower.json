@@ -13,7 +13,6 @@
     "angular-route": "^<%= ngVer %>"<% } %><% if (sanitizeModule) { %>,
     "angular-sanitize": "^<%= ngVer %>"<% } %><% if (touchModule) { %>,
     "angular-touch": "^<%= ngVer %>"<% } %>,
-    "components-font-awesome":"*",
     "angular-ui-grid":"*",
     "AngularJS-OAuth2": "angularjs-oauth2#^1.2.1",
     "angular-material":"*",

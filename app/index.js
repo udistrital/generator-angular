@@ -412,21 +412,6 @@ this.copy(
  path.join('app', jsFile3),
  path.join(this.appPath, jsFile3)
 );
-var jsFont1 = 'fonts/roboto-light-webfont.eot';
-this.copy(
- path.join('app', jsFont1),
- path.join(this.appPath, jsFont1)
-);
-var jsFont2 = 'fonts/roboto-light-webfont.woff2';
-this.copy(
- path.join('app', jsFont2),
- path.join(this.appPath, jsFont2)
-);
-var jsFont3 = 'fonts/roboto-light-webfont.woff';
-this.copy(
- path.join('app', jsFont3),
- path.join(this.appPath, jsFont3)
-);
 
 };
 
