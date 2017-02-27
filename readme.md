@@ -19,7 +19,7 @@ npm install -g grunt-cli bower yo generator-karma generator-oas
 Para crear un aplicación con este componente es necesario crear el directorio donde se desea crear y luego:
 
 ```
-yo oas "Nombre de la aplicacion"
+yo oas
      ╔══════════════════════════════════════════════════════════╗
      ║                                                          ║
      ║             ██████╗      █████╗     ███████╗             ║
@@ -28,7 +28,7 @@ yo oas "Nombre de la aplicacion"
      ║            ██║   ██║    ██╔══██║    ╚════██║             ║
      ║            ╚██████╔╝    ██║  ██║    ███████║             ║
      ║             ╚═════╝     ╚═╝  ╚═╝    ╚══════╝             ║
-     ║              𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕥𝕙𝕖 𝕘𝕖𝕟𝕖𝕣𝕒𝕥𝕠𝕣-𝕠𝕒𝕤                ║
+     ║              𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕥𝕙𝕖 𝕘𝕖𝕟𝕖𝕣𝕒𝕥𝕠𝕣-𝕠𝕒𝕤             ║
      ║                                                          ║
      ╚══════════════════════════════════════════════════════════╝
 
@@ -107,11 +107,11 @@ Produces `app/views/myroute.html`:
 ```html
   <div class="panel panel-default">
       <div class="panel-heading">
-          <%= name %>.
+          nombre de la vista
       </div>
       <div class="panel-body">
           <p>
-            Ahora puede empezar a construir la vista de <%= name %>.
+            Ahora puede empezar a construir la vista de nombre de la vista.
           </p>
       </div>
       <div class="panel-footer">

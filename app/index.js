@@ -344,7 +344,7 @@ Generator.prototype.askForModules = function askForModules() {
     angMods.push("'ui.grid.selection'");
     angMods.push("'ui.grid.exporter'");
     angMods.push("'ngStorage'");
-
+    angMods.push("'ngWebSocket'");
 
 
     if (angMods.length) {

@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('<%= scriptAppName %>')
-  .controller('menuCtrl', function($location, $http, $scope, token_service) {
-    var ctrl = this;
+.controller('menuCtrl', function($location, $http, $scope, token_service) {
+    var paths = [];
+    //$scope.notificacion = notificacion;
     $scope.actual = "";
     $scope.token_service = token_service;
     $scope.breadcrumb = [];
@@ -44,7 +45,7 @@ angular.module('<%= scriptAppName %>')
       return padres;
     };
 
-    var paths = [];
+
 
     var update_url = function() {
       $scope.breadcrumb = [''];
@@ -55,15 +56,14 @@ angular.module('<%= scriptAppName %>')
           $scope.breadcrumb = [''];
         }
       }
-    }
+    };
     recorrerArbol($scope.menu_service, "");
 
     $scope.$on('$routeChangeStart', function(next, current) {
       $scope.actual = $location.path();
       update_url();
+      console.log(next + current);
     });
-
-
     //Pendiente por definir json del menu
     (function($) {
       $(document).ready(function() {
