@@ -16,7 +16,7 @@ npm install -g grunt-cli bower yo generator-karma generator-oas
 
 ## Uso
 
-Para crear un aplicación con este componente es necesario crear el directorio donde se desea crear, luego acceder al directorio y ejecutar:
+Para construir una aplicación con generator-oas es necesario crear el directorio, (la aplicación tomará el nombre de la carpeta donde se aloje) luego acceder a la ruta y ejecutar:
 
 ```
 yo oas
