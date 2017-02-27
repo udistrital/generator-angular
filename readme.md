@@ -16,10 +16,16 @@ npm install -g grunt-cli bower yo generator-karma generator-oas
 
 ## Uso
 
-Para crear un aplicación con este componente es necesario crear el directorio donde se desea crear y luego:
+Para crear un aplicación con este componente es necesario crear el directorio donde se desea crear, luego acceder al directorio y ejecutar:
 
 ```
 yo oas
+```
+## Respuesta
+
+Aparecerá en la consola lo siguiente
+
+```
      ╔══════════════════════════════════════════════════════════╗
      ║                                                          ║
      ║             ██████╗      █████╗     ███████╗             ║
@@ -44,9 +50,9 @@ yo oas
 
 Se recomienda dejar los componentes de angular predefinidos (Enter)
 
-Luego solicitará que version de angular se desea instalar, se recomienda seleccionar la opcion # 3 que instala la version de angular 1.6.1
+Luego solicitará que version de angular se desea instalar, se recomienda seleccionar la opcion que instala la última version de angular
 
-Finalmente para lanzar el proyecto
+Finalmente para lanzar el proyecto en localhost:9000
 
 ```
 grunt serve
