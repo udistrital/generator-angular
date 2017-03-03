@@ -1,9 +1,15 @@
 'use strict';
-
+/**
+ * @ngdoc function
+ * @name <%= scriptAppName %>.controller:menuCtrl
+ * @description
+ * # menuCtrl
+ * Controller of the <%= scriptAppName %>
+ */
 angular.module('<%= scriptAppName %>')
-.controller('menuCtrl', function($location, $http, $scope, token_service) {
+.controller('menuCtrl', function($location, $http, $scope, token_service, notificacion) {
     var paths = [];
-    //$scope.notificacion = notificacion;
+    $scope.notificacion = notificacion;
     $scope.actual = "";
     $scope.token_service = token_service;
     $scope.breadcrumb = [];
@@ -58,6 +64,7 @@ angular.module('<%= scriptAppName %>')
       }
     };
     recorrerArbol($scope.menu_service, "");
+    paths.push({padre:["","Notificaciones","Ver Notificaciones"],path:"notificaciones"});
 
     $scope.$on('$routeChangeStart', function(next, current) {
       $scope.actual = $location.path();

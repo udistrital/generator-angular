@@ -345,7 +345,7 @@ Generator.prototype.askForModules = function askForModules() {
     angMods.push("'ui.grid.exporter'");
     angMods.push("'ngStorage'");
     angMods.push("'ngWebSocket'");
-
+    angMods.push("'angularMoment'");
 
     if (angMods.length) {
       this.env.options.angularDeps = '\n    ' + angMods.join(',\n    ') + '\n  ';
@@ -397,6 +397,11 @@ this.copy(
  path.join('app', htmlFile3),
  path.join(this.appPath, htmlFile3)
 );
+var htmlFile4 = 'views/notificaciones.html';
+this.copy(
+ path.join('app', htmlFile4),
+ path.join(this.appPath, htmlFile4)
+);
 var jsFile1 = 'scripts/controllers/menu.js';
 this.copy(
  path.join('app', jsFile1),
@@ -407,12 +412,21 @@ this.copy(
  path.join('app', jsFile2),
  path.join(this.appPath, jsFile2)
 );
+var jsFile5 = 'scripts/controllers/notificaciones.js';
+this.copy(
+ path.join('app', jsFile5),
+ path.join(this.appPath, jsFile5)
+);
 var jsFile3 = 'scripts/services/token.js';
 this.copy(
  path.join('app', jsFile3),
  path.join(this.appPath, jsFile3)
 );
-
+var jsFile4 = 'scripts/services/notificacion.js';
+this.copy(
+ path.join('app', jsFile4),
+ path.join(this.appPath, jsFile4)
+);
 };
 
 Generator.prototype.appJs = function appJs() {

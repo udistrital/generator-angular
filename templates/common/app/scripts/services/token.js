@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc service
- * @name prototipoApp.token
+ * @name <%= scriptAppName %>.token
  * @description
  * # token
- * Factory in the prototipoApp.
+ * Factory in the <%= scriptAppName %>.
  */
 
 
