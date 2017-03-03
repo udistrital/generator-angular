@@ -346,6 +346,8 @@ Generator.prototype.askForModules = function askForModules() {
     angMods.push("'ngStorage'");
     angMods.push("'ngWebSocket'");
     angMods.push("'angularMoment'");
+    angMods.push("'ui.utils.masks'");
+
 
     if (angMods.length) {
       this.env.options.angularDeps = '\n    ' + angMods.join(',\n    ') + '\n  ';
