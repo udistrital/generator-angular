@@ -58,6 +58,15 @@ Finalmente para lanzar el proyecto en localhost:9000
 grunt serve
 ```
 
+
+## Publicación
+
+Para construir carpeta dist con el proyecto listo para ser llevado a un entorno de pruebas o producción ejecute
+
+```
+grunt build
+```
+
 # Documentación original
 
 # AngularJS generator (generator-oas) [![Build Status](https://secure.travis-ci.org/yeoman/generator-angular.svg?branch=master)](http://travis-ci.org/yeoman/generator-angular) [![Gitter](https://img.shields.io/badge/Gitter-Join_the_Yeoman_chat_%E2%86%92-00d06f.svg)](https://gitter.im/yeoman/yeoman)
