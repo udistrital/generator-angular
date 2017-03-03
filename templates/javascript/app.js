@@ -10,6 +10,9 @@
  */
 angular
   .module('<%= scriptAppName %>', [<%= angularModules %>])<% if (ngRoute) { %>
+    .run(function(amMoment) {
+      amMoment.changeLocale('es');
+    })
     .config(['$locationProvider','$routeProvider', function($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix("");
       $routeProvider
@@ -17,6 +20,11 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
+      })
+      .when('/notificaciones', {
+        templateUrl: 'views/notificaciones.html',
+        controller: 'NotificacionesCtrl',
+        controllerAs: 'notificaciones'
       })
       .otherwise({
         redirectTo: '/'
