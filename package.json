@@ -1,7 +1,7 @@
 {
 
   "_from": "generator-oas",
-  "_id": "generator-oas@0.0.16",
+  "_id": "generator-oas@0.0.17",
   "_inCache": true,
   "_location": "/generator-oas",
   "_nodeVersion": "7.2.0",
@@ -26,7 +26,7 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.0.16.tgz",
+  "_resolved": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.0.17.tgz",
   "_shasum": "efeaa0ecdb836191784a7624f2873c52b8afb81f",
   "_shrinkwrap": null,
   "_spec": "generator-oas",
@@ -59,7 +59,7 @@
   "directories": {},
   "dist": {
     "shasum": "efeaa0ecdb836191784a7624f2873c52b8afb81f",
-    "tarball": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.0.16.tgz"
+    "tarball": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.0.17.tgz"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -114,5 +114,5 @@
   "scripts": {
     "test": "echo mocha"
   },
-  "version": "0.0.16"
+  "version": "0.0.17"
 }
