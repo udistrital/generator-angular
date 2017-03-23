@@ -507,7 +507,17 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
-        }, {
+        },{
+          expand: true,
+          cwd: '<%= yeoman.app %>/views',
+          src: '**/*.html',
+          dest: '<%%= yeoman.dist %>/views'
+        },{
+          expand : true,
+          cwd : 'bower_components/angular-ui-grid',
+          src : ['*.eot','*.svg','*.ttf','*.woff'],
+          dest : '<%%= yeoman.dist %>/styles'
+        },{
           expand: true,
           cwd: '.tmp/images',
           dest: '<%%= yeoman.dist %>/images',
@@ -525,17 +535,6 @@ module.exports = function (grunt) {
             %>/*',
           dest: '<%%= yeoman.dist %>'
         }<% } %>]
-      },{
-        expand: true,
-        cwd: '<%= yeoman.app %>/views',
-        src: '**/*.html',
-        dest: '<%= yeoman.dist %>/views'
-      },{
-        expand : true,
-        cwd : 'bower_components/angular-ui-grid',
-        src : ['*.eot','*.svg','*.ttf','*.woff'],
-        dest : '<%= yeoman.dist %>/styles'
-       }]
       },
       styles: {
         expand: true,
