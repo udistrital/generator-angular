@@ -347,7 +347,7 @@ Generator.prototype.askForModules = function askForModules() {
     angMods.push("'ngWebSocket'");
     angMods.push("'angularMoment'");
     angMods.push("'ui.utils.masks'");
-
+    angMods.push("'pascalprecht.translate'");
 
     if (angMods.length) {
       this.env.options.angularDeps = '\n    ' + angMods.join(',\n    ') + '\n  ';
@@ -428,6 +428,11 @@ var jsFile4 = 'scripts/services/notificacion.js';
 this.copy(
  path.join('app', jsFile4),
  path.join(this.appPath, jsFile4)
+);
+var jsFile6 = 'scripts/decorators/text_translate.js';
+this.copy(
+ path.join('app', jsFile6),
+ path.join(this.appPath, jsFile6)
 );
 };
 
