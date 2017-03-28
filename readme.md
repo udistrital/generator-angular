@@ -1,32 +1,57 @@
-# generator-oas
+# AngularJS generator (generator-oas) [![Build Status](https://travis-ci.org/udistrital/generator-oas?branch=master)](https://travis-ci.org/udistrital/generator-oas)
+
 
 ## Componentes
 
- - ui-grud:              http://ui-grid.info/
- - angular-material:     https://material.angularjs.org/latest/
- - bootstrap 3.2.0:      https://getbootstrap.com/
- - AngularJS-OAuth2 :    https://github.com/JamesRandall/AngularJS-OAuth2
- - angular-tree-control: http://wix.github.io/angular-tree-control/
- - assets oas:           http://10.20.0.254/assets-oas/pages/index.html
- - pdf-make              http://pdfmake.org/#/
- - ngstorage             https://github.com/gsklee/ngStorage
- - kjur-jsrsasign        http://kjur.github.io/jsrsasign/
- - angular-websocket     https://github.com/AngularClass/angular-websocket
- - angular-input-masks   https://github.com/assisrafael/angular-input-masks
- - angular-moment        https://github.com/urish/angular-moment
- - angular-translate     https://angular-translate.github.io/
- - sweetalert2           https://limonte.github.io/sweetalert2/
+ * [ui-grud](http://ui-grid.info/)
+ * [angular-material](https://material.angularjs.org/latest/)
+ * [bootstrap 3.2.0](https://getbootstrap.com/)
+ * [AngularJS-OAuth2](https://github.com/JamesRandall/AngularJS-OAuth2)
+ * [angular-tree-control]( http://wix.github.io/angular-tree-control/)
+ * [assets oas](http://10.20.0.254/assets-oas/pages/index.html)
+ * [pdf-make](http://pdfmake.org/#/)
+ * [ngstorage](https://github.com/gsklee/ngStorage)
+ * [kjur-jsrsasign](http://kjur.github.io/jsrsasign/)
+ * [angular-websocket](https://github.com/AngularClass/angular-websocket)
+ * [angular-input-masks](https://github.com/assisrafael/angular-input-masks)
+ * [angular-moment](https://github.com/urish/angular-moment)
+ * [angular-translate](https://angular-translate.github.io/)
+ * [sweetalert2](https://limonte.github.io/sweetalert2/)
 
 ## Instalación
 
+Agregamos repo Epel
+```bash
+sudo yum install epel-release
 ```
-npm install -g grunt-cli bower yo generator-karma generator-oas
+Instalamos npm
+```bash
+sudo yum install npm
+```
+Comprobar instalación version de nodejs superior a 6.9
+```bash
+node --version
+```
+Si se requiere configurar proxy en npm
+
+```bash
+sudo npm config set proxy http://127.0.0.1:8080/
+sudo npm config set https-proxy http://127.0.0.1:8080/
+```
+
+y finalmente, instalamos con npm
+
+```bash
+sudo npm install -g grunt-cli bower yo generator-karma generator-oas
 ```
 
 ## Uso
 
-Para construir una aplicación con generator-oas es necesario crear el directorio, (la aplicación tomará el nombre de la carpeta donde se aloje) luego acceder a la ruta y ejecutar:
-
+Para construir una aplicación con generator-oas es necesario crear el directorio, (la aplicación tomará el nombre de la carpeta donde se aloje) para crear el proyecto mi_proyecto ejecutar
+```bash
+ mkdir mi_proyecto && cd $_
+```
+y luego
 ```
 yo oas
 ```
@@ -34,7 +59,7 @@ yo oas
 
 Aparecerá en la consola lo siguiente
 
-```
+```bash
      ╔══════════════════════════════════════════════════════════╗
      ║                                                          ║
      ║             ██████╗      █████╗     ███████╗             ║
@@ -43,7 +68,7 @@ Aparecerá en la consola lo siguiente
      ║            ██║   ██║    ██╔══██║    ╚════██║             ║
      ║            ╚██████╔╝    ██║  ██║    ███████║             ║
      ║             ╚═════╝     ╚═╝  ╚═╝    ╚══════╝             ║
-     ║              𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕥𝕙𝕖 𝕘𝕖𝕟𝕖𝕣𝕒𝕥𝕠𝕣-𝕠𝕒𝕤             ║
+     ║                 Welcome to generator-oas                 ║
      ║                                                          ║
      ╚══════════════════════════════════════════════════════════╝
 
@@ -58,32 +83,38 @@ Aparecerá en la consola lo siguiente
 ```
 
 Se recomienda dejar los componentes de angular predefinidos (Enter)
+Si en un momento llega a quedarse a la espera de algo, solo espera un (Enter)
 
-Luego solicitará que version de angular se desea instalar, se recomienda seleccionar la opcion que instala la última version de angular
+Finalmente para correr el proyecto en localhost:9000
 
-Finalmente para lanzar el proyecto en localhost:9000
-
-```
+```bash
 grunt serve
 ```
 
-
 ## Publicación
 
-Para construir carpeta dist con el proyecto listo para ser llevado a un entorno de pruebas o producción ejecute
+Para construir carpeta dist con el proyecto minificado y listo para ser llevado a un entorno de pruebas o producción ejecute
 
-```
+```bash
 grunt build
+```
+## git
+
+Cuando clonamos un proyecto que ha sido creado con **generator-oas**, las carpetas node_modules y bower_components
+no estarán disponibles en el proyecto puesto que hacen parte del gitignore, para nuevamente tener estos directorios
+ejecute
+
+```bash
+npm install
+bower install
 ```
 
 # Documentación original
 
-# AngularJS generator (generator-oas) [![Build Status](https://secure.travis-ci.org/yeoman/generator-angular.svg?branch=master)](http://travis-ci.org/yeoman/generator-angular) [![Gitter](https://img.shields.io/badge/Gitter-Join_the_Yeoman_chat_%E2%86%92-00d06f.svg)](https://gitter.im/yeoman/yeoman)
-
 ## Usage
 
 Install `yo`, `grunt-cli`, `bower`, `generator-oas` and `generator-karma`:
-```
+```bash
 npm install -g grunt-cli bower yo generator-karma generator-oas
 ```
 
