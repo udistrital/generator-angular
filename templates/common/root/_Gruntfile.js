@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         tasks: ['newer:coffee:test', 'karma']
       },<% } else if (typescript) { %>
       typescript: {
-        files: ['<%%= yeoman.app %>/scripts/{,*/}*.ts'],
+        files: ['<%%= yeoman.app %>/scripts/{,**/}*.ts'],
         tasks: ['typescript:base']
       },
       typescriptTest: {
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         tasks: ['typescript:test', 'karma']
       },<% } else { %>
       js: {
-        files: ['<%%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['<%%= yeoman.app %>/scripts/{,**/}*.js'],
         tasks: ['newer:jshint:all', 'newer:jscs:all'],
         options: {
           livereload: '<%%= connect.options.livereload %>'
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
           livereload: '<%%= connect.options.livereload %>'
         },
         files: [
-          '<%%= yeoman.app %>/{,*/}*.html',
+          '<%%= yeoman.app %>/{,**/}*.html',
           '.tmp/styles/{,*/}*.css',<% if (coffee || typescript) { %>
           '.tmp/scripts/{,*/}*.js',<% } %>
           '<%%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -507,7 +507,17 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
-        }, {
+        },{
+          expand: true,
+          cwd: '<%= yeoman.app %>/views',
+          src: '**/*.html',
+          dest: '<%%= yeoman.dist %>/views'
+        },{
+          expand : true,
+          cwd : 'bower_components/angular-ui-grid',
+          src : ['*.eot','*.svg','*.ttf','*.woff'],
+          dest : '<%%= yeoman.dist %>/styles'
+        },{
           expand: true,
           cwd: '.tmp/images',
           dest: '<%%= yeoman.dist %>/images',
