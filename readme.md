@@ -2,11 +2,20 @@
 
 ## Componentes
 
- - Hojas de estilo de la oficina asesora de sistemas publicado en la dirección: http://10.20.0.254/assets-oas/pages/index.html
- - generator-angular: https://github.com/yeoman/generator-angular
- - La libreria ui-grud: http://ui-grid.info/
- - La libreria angular-material: https://material.angularjs.org/latest/
- - El generador se encuentra en: https://www.npmjs.com/package/generator-oas
+ - ui-grud:              http://ui-grid.info/
+ - angular-material:     https://material.angularjs.org/latest/
+ - bootstrap 3.2.0:      https://getbootstrap.com/
+ - AngularJS-OAuth2 :    https://github.com/JamesRandall/AngularJS-OAuth2
+ - angular-tree-control: http://wix.github.io/angular-tree-control/
+ - assets oas:           http://10.20.0.254/assets-oas/pages/index.html
+ - pdf-make              http://pdfmake.org/#/
+ - ngstorage             https://github.com/gsklee/ngStorage
+ - kjur-jsrsasign        http://kjur.github.io/jsrsasign/
+ - angular-websocket     https://github.com/AngularClass/angular-websocket
+ - angular-input-masks   https://github.com/assisrafael/angular-input-masks
+ - angular-moment        https://github.com/urish/angular-moment
+ - angular-translate     https://angular-translate.github.io/
+ - sweetalert2           https://limonte.github.io/sweetalert2/
 
 ## Instalación
 
