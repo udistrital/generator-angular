@@ -1,7 +1,7 @@
 {
 
   "_from": "generator-oas",
-  "_id": "generator-oas@0.1.1",
+  "_id": "generator-oas@0.1.2",
   "_inCache": true,
   "_location": "/generator-oas",
   "_nodeVersion": "7.2.0",
@@ -26,7 +26,7 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.1.1.tgz",
+  "_resolved": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.1.2.tgz",
   "_shasum": "efeaa0ecdb836191784a7624f2873c52b8afb81f",
   "_shrinkwrap": null,
   "_spec": "generator-oas",
@@ -59,7 +59,7 @@
   "directories": {},
   "dist": {
     "shasum": "efeaa0ecdb836191784a7624f2873c52b8afb81f",
-    "tarball": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.1.1.tgz"
+    "tarball": "https://registry.npmjs.org/generator-oas/-/generator-oas-0.1.2.tgz"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -86,6 +86,7 @@
   "gitHead": "8f6a0a63a0a28ed823a5b9e46b12e29d3b2b4d44",
   "homepage": "https://github.com/udistrital/generator-oas#readme",
   "keywords": [
+    "yeoman-generator",
     "oas-generator",
     "framework",
     "component",
@@ -114,5 +115,5 @@
   "scripts": {
     "test": "echo mocha"
   },
-  "version": "0.1.1"
+  "version": "0.1.2"
 }

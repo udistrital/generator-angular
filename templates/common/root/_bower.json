@@ -27,7 +27,7 @@
     "sweetalert2": "^6.4.4"
   },
   "resolutions": {
-    "angular": "1.6.3"
+    "angular": "1.6.4"
   },
   "devDependencies": {
     "angular-mocks": "^<%= ngVer %>"
