@@ -509,7 +509,7 @@ module.exports = function (grunt) {
           ]
         },{
           expand: true,
-          cwd: '<%= yeoman.app %>/views',
+          cwd: '<%%= yeoman.app %>/views',
           src: '**/*.html',
           dest: '<%%= yeoman.dist %>/views'
         },{

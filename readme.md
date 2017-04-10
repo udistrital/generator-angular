@@ -1,4 +1,4 @@
-# AngularJS generator (generator-oas) [![Build Status](https://api.travis-ci.org/yeoman/generator-angular.svg?branch=master)](https://travis-ci.org/udistrital/generator-oas)
+# AngularJS generator (generator-oas) [![Build Status](https://api.travis-ci.org/udistrital/generator-oas.svg?branch=master)](https://travis-ci.org/udistrital/generator-oas)
 
 
 ## Componentes
