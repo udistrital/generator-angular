@@ -109,13 +109,14 @@ var Generator = module.exports = function Generator(args, options) {
         ].join(','),
         'bower-components-path': 'bower_components'
       }
-    });
-
-    this.installDependencies({
-      skipInstall: this.options['skip-install'],
-      skipMessage: this.options['skip-message'],
-      callback: this._injectDependencies.bind(this)
-    });
+    }, (function(){
+      console.log('Installing dependencies...');
+      this.installDependencies({
+        skipInstall: this.options['skip-install'],
+        skipMessage: this.options['skip-message'],
+        callback: this._injectDependencies.bind(this)
+      });
+    }).bind(this));
 
     if (this.env.options.ngRoute) {
       this.invoke('oas:route', {
@@ -378,62 +379,62 @@ Generator.prototype.bootstrapFiles = function bootstrapFiles() {
   this.copy(
    path.join('app', cssFile3),
    path.join(this.appPath, cssFile3)
- );
- var cssFile4 = 'styles/timeline.css';
- this.copy(
-  path.join('app', cssFile4),
-  path.join(this.appPath, cssFile4)
-);
-var htmlFile1 = 'views/menu.html';
-this.copy(
- path.join('app', htmlFile1),
- path.join(this.appPath, htmlFile1)
-);
-var htmlFile2 = 'views/main.html';
-this.copy(
- path.join('app', htmlFile2),
- path.join(this.appPath, htmlFile2)
-);
-var htmlFile3 = 'views/footer.html';
-this.copy(
- path.join('app', htmlFile3),
- path.join(this.appPath, htmlFile3)
-);
-var htmlFile4 = 'views/notificaciones.html';
-this.copy(
- path.join('app', htmlFile4),
- path.join(this.appPath, htmlFile4)
-);
-var jsFile1 = 'scripts/controllers/menu.js';
-this.copy(
- path.join('app', jsFile1),
- path.join(this.appPath, jsFile1)
-);
-var jsFile2 = 'scripts/controllers/footer.js';
-this.copy(
- path.join('app', jsFile2),
- path.join(this.appPath, jsFile2)
-);
-var jsFile5 = 'scripts/controllers/notificaciones.js';
-this.copy(
- path.join('app', jsFile5),
- path.join(this.appPath, jsFile5)
-);
-var jsFile3 = 'scripts/services/token.js';
-this.copy(
- path.join('app', jsFile3),
- path.join(this.appPath, jsFile3)
-);
-var jsFile4 = 'scripts/services/notificacion.js';
-this.copy(
- path.join('app', jsFile4),
- path.join(this.appPath, jsFile4)
-);
-var jsFile6 = 'scripts/decorators/text_translate.js';
-this.copy(
- path.join('app', jsFile6),
- path.join(this.appPath, jsFile6)
-);
+  );
+  var cssFile4 = 'styles/timeline.css';
+  this.copy(
+    path.join('app', cssFile4),
+    path.join(this.appPath, cssFile4)
+  );
+  var htmlFile1 = 'views/menu.html';
+  this.copy(
+    path.join('app', htmlFile1),
+    path.join(this.appPath, htmlFile1)
+  );
+  var htmlFile2 = 'views/main.html';
+  this.copy(
+    path.join('app', htmlFile2),
+    path.join(this.appPath, htmlFile2)  
+  );
+  var htmlFile3 = 'views/footer.html';
+  this.copy(
+    path.join('app', htmlFile3),
+    path.join(this.appPath, htmlFile3)
+  );
+  var htmlFile4 = 'views/notificaciones.html';
+  this.copy(
+    path.join('app', htmlFile4),
+    path.join(this.appPath, htmlFile4)
+  );
+  var jsFile1 = 'scripts/controllers/menu.js';
+  this.copy(
+    path.join('app', jsFile1),
+    path.join(this.appPath, jsFile1)
+  );
+  var jsFile2 = 'scripts/controllers/footer.js';
+  this.copy(
+    path.join('app', jsFile2),
+    path.join(this.appPath, jsFile2)
+  );
+  var jsFile5 = 'scripts/controllers/notificaciones.js';
+  this.copy(
+    path.join('app', jsFile5),
+    path.join(this.appPath, jsFile5)
+  );
+  var jsFile3 = 'scripts/services/token.js';
+  this.copy(
+    path.join('app', jsFile3),
+    path.join(this.appPath, jsFile3)
+  );
+  var jsFile4 = 'scripts/services/notificacion.js';
+  this.copy(
+    path.join('app', jsFile4),
+    path.join(this.appPath, jsFile4)
+  );
+  var jsFile6 = 'scripts/decorators/text_translate.js';
+  this.copy(
+    path.join('app', jsFile6),
+    path.join(this.appPath, jsFile6)
+  );
 };
 
 Generator.prototype.appJs = function appJs() {

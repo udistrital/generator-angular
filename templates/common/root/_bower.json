@@ -1,4 +1,4 @@
-{<% var ngVer = "1.4.0" %>
+{<% var ngVer = "1.6.5" %>
   "name": "<%= _.slugify(_.humanize(appname)) %>",
   "version": "0.0.0",
   "dependencies": {
@@ -27,7 +27,7 @@
     "sweetalert2": "^6.4.4"
   },
   "resolutions": {
-    "angular": "1.6.4"
+    "angular": "<%= ngVer %>"
   },
   "devDependencies": {
     "angular-mocks": "^<%= ngVer %>"
